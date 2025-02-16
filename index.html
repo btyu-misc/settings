@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/index.css" rel="stylesheet" type="text/css" media="all">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <a href="https://myreaa.vercel.app/"><img src = "MyReaa.png" style = "cursor: pointer; width: 140px; position: absolute; display: inline-block; top: 10px; left: 10px;"/></a>
+    <div id = "toolbar" class = "toolbar">
+        <a class = "active" id = "Pricing" href = "https://myreaa.vercel.app/payment">Pricing + Sign up</a>
+    	  <a class = "clickable" id = "Sign In" href = "https://myreaa.vercel.app/login">Settings</a>
+    	  <a class = "clickable" id = "Contact us" href = "https://myreaa.vercel.app/support">Contact us</a>
+    	  <a class = "clickable" id = "Newsletter" href = "https://myreaa.vercel.app/newsletter">Newsletter</a>
+    	  <a class = "clickable" id = "About" href = "https://myreaa.vercel.app/about">About</a>
+    </div>
+    
+    
+    
+    
+    <div style = "display: flex; align-items: stretch;">
+      <div class="sidebar" style = "width: 30; align-items: stretch;">
+        <br><br>
+        <div style = "position: fixed;">
+        <a onclick = "general()">General</a>
+        <a onclick = "security()">Security and Privacy</a>
+        <a onclick = "subscriptions()">Manage Subscription</a>
+        <a onclick = "cancelm()">Manage Account</a>
+        <a onclick = "policy()">Privacy Policy</a>
+        </div>
+      </div>
+      <br><br>
+      
+      <div class = "settings" style = "width: 60%; transform: translateX(10%); align-items: stretch;" >
+      <br>
+        <div id = "general" style = "">
+          <h2>General Profile</h2>
+          <br>
+          <div style = "width: 20%; transform: translateX(30%)">
+          <img src = "PFP.png" style = "width: 100%;"/><br>
+          <p style = "">Change Profile Picture</p>
+          </div><br>
+          <p>Email Address: <input type = "text" id = "ema" name = "ema" style = "width: 80%" placeholder = "johndoe@myreaa.com"></p>
+          <p style = "display: inline;">First Name: <input type = "text" id = "fn" name = "fn" style = "width: 30%" placeholder = "John"></p>
+          <p style = "display: inline; floating: right;">Last Name: <input type = "text" id = "ln" name = "ln" style = "width: 30%" placeholder = "Doe"></p>
+          <br>
+        </div><br>
+        
+        <div id = "security" style = "">
+        <h2>Privacy</h2>
+        <p>Password: <input type = "password" id = "search_lat" name = "search" style = "width: 15vw" placeholder = "•••••••••"></p>
+        <p>Confirm Password: <input type = "password" id = "search_lat" name = "search" style = "width: 15vw" placeholder = "Enter Password"></p>
+        <button type = "button" class = "active" id = "Pricing" onclick = "password()"style = "background-color: #18263E; color: white; height: 30px">Change Password</button>
+        <br>
+        
+        </div>
+        <br>
+        <div id = "subscriptions" style = "">
+        <h2>Manage Subscription</h2>
+        <p>Placeholder!</p>
+        <button type = "button" class = "active" id = "sub" onclick = "subscription()"style = "background-color: #18263E; color: white; height: 30px">Manage Subscription</button>
+        <br>
+        
+        </div>
+        <div id = "cancel" style = "">
+        <h2>Cancel Subscription</h2>
+        <p>Placeholder!</p>
+        <button type = "button" class = "active" id = "cancel()" onclick = "subscription()"style = "background-color: red; color: white; height: 30px">Cancel Subscription</button>
+        <br>
+        </div>
+        <div id = "policy" style = "">
+        <h2>Privacy Policy</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br>
+        </div>
+        
+      </div>
+      
+    </div>
+  </body>
+</html>
